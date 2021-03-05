@@ -6,7 +6,6 @@
 // var numbers = []
 //
 // for (var i = 0; i < 100; i++) {
-//   // console.log(i+1);
 //   numbers.push(i+1)
 //   document.getElementById("result").innerHTML += "<span>" + numbers[i] + " " + "</span>";
 //   if (!((i+1)%3) && !((i+1)%5)) {
@@ -21,15 +20,12 @@
 
 
 var numbers = [];
-var interference = numbers;
-console.log(numbers);
-console.log(interference);
-
+var interference = []
 
 for (var i = 0; i < 100; i++) {
-  // console.log(i+1);
   numbers.push(i+1)
-  // var interference = numbers
+  interference.push(i+1);
+  // interference = numbers;
   if (!((i+1)%3) && !((i+1)%5)) {
     interference[i] = "FizzBuzz"
   } else if (!((i+1)%3)) {
@@ -42,21 +38,3 @@ for (var i = 0; i < 100; i++) {
 }
 console.log(numbers);
 console.log(interference);
-
-
-
-// var numbers = []
-//
-// for (var i = 0; i < 100; i++) {
-//   console.log(i+1);
-//   numbers.push(i+1)
-//   if (!((i+1)%3) && !((i+1)%5)) {
-//     numbers[i] = "FizzBuzz"
-//   } else if (!((i+1)%3)) {
-//     numbers[i] = "Fizz"
-//   } else if (!((i+1)%5)) {
-//     numbers[i] = "Buzz"
-//   }
-//   document.getElementById("result").innerHTML += "<span>" + numbers[i] + " " + "</span>";
-// }
-// console.log(numbers);
